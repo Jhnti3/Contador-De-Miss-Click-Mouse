@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;200;300;400;500 & display=swap');
+
+* {                                           
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;        /* centraliza no meio */
+    align-items: center;   /* alinha tudo na horizontal da tela*/
+    justify-content: center ;   /* ajusta no meio da tela meio */
+    height: 100vh;   /* direção meio da tela */
+    background-color: #18181b;   /* cor fundo geral da tela */
+}
+
+#counter {
+    background-color: #262626;  /* cor do bloco principal */
+    padding: 2rem;      /* distancia bloco principal da borda */
+    border-radius: 8px;  /* style da borda */
+}
+
+#counter div {       
+    display: flex;     /* tamanho da div principal */
+    align-items: center;
+}
+
+#value {
+    font-size: 8rem;       /* tamanho da fonte do valor "0" */
+    color: #fff;       /* cor da fonte do valor "0" */
+    min-width: 14rem;    /* distancia do valor "0" para os botoes */
+    text-align: center;   /* centraliza fonte do valor "0" no meio dos botoes */
+}
+
+button {
+    border: none;     /* remove borda dos botoes */
+    border-radius: 4px;  /* estilo botoes "+" e "-" */
+    color: #fff;      /* cor dos "+" "-" */
+    font-weight: 500; 
+    cursor: pointer;   /* ao passar mouse em cima vira click */
+    transition: opacity .3s;  /* tempo q vai acender ao passa mouse */
+}
+
+button:hover {
+    opacity: .8;       /* acender cima do item */
+}
+
+.count-button {
+    width: 6rem;     /* largura botao "+" e "-" */
+    height: 6rem;    /* altura botao "+" e "-" */
+    font-size: 3rem;  /* tamanho botao "+" e "-" */
+    background-color: #18181b;  /* cor fundo tamanho botao "+" e "-" */
+    margin-right: 1rem;
+}
+
+.count-button:last-child {
+    margin-right: 0rem;
+    margin-left: 1rem;
+}
+
+#reset { 
+    width: 100%;      /* ocupar 100% do espaco dentro da div principal */
+    font-size: 1.8rem;   /* tamanho da letra do reset */
+    background-color: #3730a3;  /* cor fundo botao reset */
+    padding: .8rem 0;   /* largura RESETAR / altura */
+    margin-top: 1rem;  /* ajuste de distanciamento */
+}
